@@ -1,0 +1,508 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1511376777868-611b54f68947?w=800",
+    "title": "TuneBox",
+    "companyName": "SoundWave Ltd.",
+    "id": 1,
+    "description": "TuneBox lets you stream, download, and share millions of songs from your favorite artists. Enjoy curated playlists and AI-based recommendations.",
+    "size": 75,
+    "reviews": 10300,
+    "ratingAvg": 4.8,
+    "downloads": "18M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 270 },
+      { "name": "3 star", "count": 650 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 6800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
+    "title": "FitTrack",
+    "companyName": "HealthCore",
+    "id": 2,
+    "description": "FitTrack helps you track workouts, calories, and progress toward your fitness goals. Integrates with smartwatches and wearables for accurate stats.",
+    "size": 68,
+    "reviews": 8900,
+    "ratingAvg": 4.7,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 510 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 5740 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800",
+    "title": "EduMate",
+    "companyName": "SmartLearn",
+    "id": 3,
+    "description": "EduMate connects students with online tutors and learning materials across various subjects. Includes interactive quizzes and live classes.",
+    "size": 82,
+    "reviews": 6700,
+    "ratingAvg": 4.5,
+    "downloads": "7.4M",
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 3770 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+    "title": "BudgetBuddy",
+    "companyName": "FinTech Labs",
+    "id": 4,
+    "description": "BudgetBuddy helps you manage expenses, track income, and save money with AI-based budgeting insights and graphs.",
+    "size": 61,
+    "reviews": 4500,
+    "ratingAvg": 4.4,
+    "downloads": "5.2M",
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2550 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+    "title": "TaskFlow",
+    "companyName": "Productive Co.",
+    "id": 5,
+    "description": "TaskFlow boosts your productivity by organizing projects, tasks, and team collaboration in one simple interface.",
+    "size": 48,
+    "reviews": 9100,
+    "ratingAvg": 4.9,
+    "downloads": "14M",
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 6440 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/QF79gfnB/download.jpg",
+    "title": "PhotoCraft",
+    "companyName": "Pixely Studio",
+    "id": 6,
+    "description": "PhotoCraft lets you edit and enhance your photos with professional filters, AI retouching, and easy sharing tools.",
+    "size": 85,
+    "reviews": 13200,
+    "ratingAvg": 4.8,
+    "downloads": "21M",
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 560 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 9200 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
+    "title": "TravelNow",
+    "companyName": "Wanderlust Corp.",
+    "id": 7,
+    "description": "TravelNow helps you find cheap flights, book hotels, and plan travel itineraries with AI suggestions for destinations.",
+    "size": 64,
+    "reviews": 8700,
+    "ratingAvg": 4.6,
+    "downloads": "9.6M",
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 270 },
+      { "name": "3 star", "count": 540 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 4870 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/b5fNKh0D/download-1.jpg",
+    "title": "ShopEase",
+    "companyName": "CommerceCore",
+    "id": 8,
+    "description": "ShopEase offers a seamless online shopping experience with fast delivery, wishlists, and smart product recommendations.",
+    "size": 73,
+    "reviews": 15600,
+    "ratingAvg": 4.9,
+    "downloads": "28M",
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 730 },
+      { "name": "4 star", "count": 3300 },
+      { "name": "5 star", "count": 10860 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=800",
+    "title": "CookIt",
+    "companyName": "KitchenLab",
+    "id": 9,
+    "description": "CookIt provides thousands of recipes with step-by-step videos, nutritional info, and personalized meal planning.",
+    "size": 57,
+    "reviews": 4200,
+    "ratingAvg": 4.3,
+    "downloads": "3.8M",
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 430 },
+      { "name": "4 star", "count": 970 },
+      { "name": "5 star", "count": 2420 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800",
+    "title": "Readify",
+    "companyName": "BookLabs",
+    "id": 10,
+    "description": "Readify gives access to a vast digital library of eBooks and audiobooks across genres with AI reading recommendations.",
+    "size": 69,
+    "reviews": 9800,
+    "ratingAvg": 4.8,
+    "downloads": "13M",
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 6790 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
+    "title": "MindEase",
+    "companyName": "CalmCore",
+    "id": 11,
+    "description": "MindEase helps reduce stress with guided meditations, breathing exercises, and soothing music designed by therapists.",
+    "size": 58,
+    "reviews": 8700,
+    "ratingAvg": 4.9,
+    "downloads": "9.2M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+    "title": "SafeVault",
+    "companyName": "SecureTech",
+    "id": 12,
+    "description": "SafeVault stores your passwords, credit card info, and personal documents in an encrypted cloud vault. Easy, secure, and fast access.",
+    "size": 45,
+    "reviews": 7100,
+    "ratingAvg": 4.8,
+    "downloads": "8.1M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 390 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 4700 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800",
+    "title": "ShopList",
+    "companyName": "Listify",
+    "id": 13,
+    "description": "ShopList is a smart grocery list app that syncs with family members and automatically sorts items by category.",
+    "size": 38,
+    "reviews": 3100,
+    "ratingAvg": 4.4,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 850 },
+      { "name": "5 star", "count": 1640 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504691342899-7fdd3f83fa3f?w=800",
+    "title": "FoodEase",
+    "companyName": "MealBox",
+    "id": 14,
+    "description": "FoodEase lets you order from top-rated restaurants, track deliveries in real time, and get personalized meal deals.",
+    "size": 66,
+    "reviews": 9600,
+    "ratingAvg": 4.6,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 540 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 6690 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=800",
+    "title": "Connectify",
+    "companyName": "SocialSphere",
+    "id": 15,
+    "description": "Connectify is a next-gen social platform where users can share photos, short videos, and stories with privacy controls.",
+    "size": 91,
+    "reviews": 17800,
+    "ratingAvg": 4.7,
+    "downloads": "25M",
+    "ratings": [
+      { "name": "1 star", "count": 330 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 730 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 12940 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800",
+    "title": "Weatherly",
+    "companyName": "ClimaSoft",
+    "id": 16,
+    "description": "Weatherly gives you hyper-local weather updates, radar maps, and severe weather alerts powered by AI forecasting.",
+    "size": 52,
+    "reviews": 7200,
+    "ratingAvg": 4.5,
+    "downloads": "6.7M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 520 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 4600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+    "title": "NotePro",
+    "companyName": "ThinkPad Labs",
+    "id": 17,
+    "description": "NotePro is a sleek note-taking app with handwriting support, tagging, and cloud sync for productivity on all devices.",
+    "size": 42,
+    "reviews": 5600,
+    "ratingAvg": 4.6,
+    "downloads": "4.5M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 380 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3680 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800",
+    "title": "Langly",
+    "companyName": "LearnIt",
+    "id": 18,
+    "description": "Langly makes language learning fun through games, quizzes, and speech recognition to help you master any new language.",
+    "size": 65,
+    "reviews": 9400,
+    "ratingAvg": 4.8,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 170 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 6480 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800",
+    "title": "PetCare",
+    "companyName": "FurryFriends",
+    "id": 19,
+    "description": "PetCare helps you manage your pets’ health with vaccination reminders, vet finders, and diet tracking tools.",
+    "size": 55,
+    "reviews": 3900,
+    "ratingAvg": 4.4,
+    "downloads": "3.1M",
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 380 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2290 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1481277542470-605612bd2d61?w=800",
+    "title": "GameZone",
+    "companyName": "PlayWorks",
+    "id": 20,
+    "description": "GameZone is your all-in-one gaming community hub. Stream, chat, and compete with gamers across the globe.",
+    "size": 98,
+    "reviews": 15200,
+    "ratingAvg": 4.8,
+    "downloads": "24M",
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 740 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 10860 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611162617213-7dc88a0f3d52?w=800",
+    "title": "Artify",
+    "companyName": "CreativePixels",
+    "id": 21,
+    "description": "Artify lets you draw, paint, and share digital art using professional brushes and layers — perfect for creators of all levels.",
+    "size": 77,
+    "reviews": 9800,
+    "ratingAvg": 4.9,
+    "downloads": "20M",
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 280 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 6300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800",
+    "title": "NewsVerse",
+    "companyName": "InfoCore Media",
+    "id": 22,
+    "description": "NewsVerse aggregates the latest global news from verified sources. Customize your feed by interest and get real-time alerts.",
+    "size": 53,
+    "reviews": 5200,
+    "ratingAvg": 4.2,
+    "downloads": "4.1M",
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 580 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 2690 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800",
+    "title": "AutoCare",
+    "companyName": "DriveTech",
+    "id": 23,
+    "description": "AutoCare keeps track of vehicle maintenance schedules, fuel expenses, and driving history — all in one place.",
+    "size": 47,
+    "reviews": 3600,
+    "ratingAvg": 4.4,
+    "downloads": "2.6M",
+    "ratings": [
+      { "name": "1 star", "count": 130 },
+      { "name": "2 star", "count": 190 },
+      { "name": "3 star", "count": 380 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1556912998-c57cc6b63cf0?w=800",
+    "title": "HomeSync",
+    "companyName": "SmartLiving Co.",
+    "id": 24,
+    "description": "HomeSync connects all your smart home devices — lights, thermostat, and security — into one easy control app.",
+    "size": 62,
+    "reviews": 7200,
+    "ratingAvg": 4.6,
+    "downloads": "7.2M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 470 },
+      { "name": "4 star", "count": 1670 },
+      { "name": "5 star", "count": 4640 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800",
+    "title": "BookVerse",
+    "companyName": "Readify",
+    "id": 25,
+    "description": "BookVerse is a digital library for readers to discover, save, and share eBooks and audiobooks across genres.",
+    "size": 59,
+    "reviews": 8600,
+    "ratingAvg": 4.8,
+    "downloads": "11M",
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 6060 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+    "title": "CareerPath",
+    "companyName": "TalentWorks",
+    "id": 26,
+    "description": "CareerPath guides professionals with mentorship programs, job tracking, and resume-building tools.",
+    "size": 52,
+    "reviews": 3400,
+    "ratingAvg": 4.3,
+    "downloads": "2.9M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 370 },
+      { "name": "4 star", "count": 910 },
+      { "name": "5 star", "count": 1770 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581093448799-ec94d69f37c1?w=800",
+    "title": "TimeMaster",
+    "companyName": "Clockify Apps",
+    "id": 27,
+    "description": "TimeMaster helps freelancers and businesses track time, manage projects, and generate invoices efficiently.",
+    "size": 44,
+    "reviews": 4000,
+    "ratingAvg": 4.4,
+    "downloads": "3.2M",
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 420 },
+      { "name": "4 star", "count": 1080 },
+      { "name": "5 star", "count": 2120 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800",
+    "title": "CalorieWise",
+    "companyName": "NutriTech",
+    "id": 28,
+    "description": "CalorieWise tracks your meals, calories, and macros — integrating with fitness apps to optimize nutrition goals.",
+    "size": 50,
+    "reviews": 6700,
+    "ratingAvg": 4.7,
+    "downloads": "6.4M",
+    "ratings": [
+      { "name": "1 star", "count": 170 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 4400 }
+    ]
+  }
+]
+
+
