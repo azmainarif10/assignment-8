@@ -10,7 +10,7 @@ const Banner = () => {
       <h1 className="text-5xl font-bold">We Build <br />
  <span className=' bg-gradient-to-r from-[#632ee3] to-[#9f62f2] font-bold text-transparent bg-clip-text text-[Inter] '>Productive</span> Apps</h1>
       <p className='py-6'>
-        AtHERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br className='md:hidden sm:hidden' />Our goal is to turn your ideas into digital experiences that truly make an impact.
+        AtHERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br/>Our goal is to turn your ideas into digital experiences that truly make an impact.
       </p>
      
      <Link to={'https://play.google.com/store/games?hl=en&pli=1'} target="_blank"  >

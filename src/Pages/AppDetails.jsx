@@ -1,23 +1,46 @@
 import React from 'react';
 
-import { useLocation } from 'react-router';
+import { Link, useLocation } from 'react-router';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
  import {  toast } from 'react-toastify';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Siren } from 'lucide-react';
 const AppDetails = () => {
     const location = useLocation()
-       const [installed,setInstalled] = useState(false)
+  
 
-       const {companyName,image,title,size,ratings,description,id} =location.state
+    
+       const [installed,setInstalled] = useState(false)
+        
+       if(!location.state){
+       return(
+        <div>
+
+         <div className='flex justify-center items-center'> <Siren size={230} /></div> 
+        <p className='  mt-5 font-[Inter] font-semibold  lg:text-5xl text-center'>Oops, Apps not found!</p>
+   <div className='flex justify-center items-center'>
+    <Link to={'/'} >  <button className='  mt-5 btn text-white bg-gradient-to-r from-[#632ee3] to-[#9f62f2]'>Go Back</button></Link>
+    </div> 
+
+        </div>
        
-        useEffect(()=>{
+       ) 
+      }
+     
+
+       const {companyName,image,title,size,ratings,description,id} = location.state;
+       
+          useEffect(()=>{
+           
           const existing = JSON.parse(localStorage.getItem("saved")) || []
         
            const alreadyInstalled = existing.some(exits=>exits.id === id)
               setInstalled(alreadyInstalled)
 
         },[id])
+
+     
     function handleInstall(){
          if(installed) return toast("App is already installed")
        const existing = JSON.parse(localStorage.getItem("saved")) || []
@@ -34,8 +57,14 @@ const AppDetails = () => {
        toast("App installed")
          
       }
+     
+    
+
 
      return (
+
+
+     
         <div>
             <div className="card lg:card-side bg-base-100 mx-auto shadow-sm">
   <figure className='lg:h-80 lg:w-80'>
