@@ -1,10 +1,12 @@
 import { Download, Star } from 'lucide-react';
 import React from 'react';
-
+import { useNavigate } from 'react-router';
+   
 const AppCard = ({app}) => {
+   const navigate = useNavigate()
     return (
         <div>
-            <div className="card bg-base-100 py-4  shadow-sm">
+            <div onClick={()=>{navigate(`/details/${app.id}`, {state:app})} } className="card bg-base-100 py-4  shadow-sm">
   <figure className="py-5 px-5">
     <img 
       src={app.image}

@@ -7,6 +7,7 @@ import Root from './Layouts/Root';
 import Apps from './Pages/Apps';
 import Installation from './Pages/Installation';
 import Home from './Pages/Home';
+import AppDetails from './Pages/AppDetails';
 
  const router = createBrowserRouter([
       
@@ -28,6 +29,11 @@ import Home from './Pages/Home';
         { 
         path:"/install",
         Component: Installation,
+ 
+      },
+      { 
+        path:"/details/:id",
+        Component: AppDetails,
  
       }
     ]

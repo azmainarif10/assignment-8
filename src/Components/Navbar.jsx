@@ -23,7 +23,7 @@ const Navbar = () => {
       <Link to={'/'}>
             <img className='h-10 w-10' src="/logo.png" alt="" />
 </Link>
-   <a className=" bg-gradient-to-r from-[#632ee3] to-[#9f62f2] font-bold text-transparent bg-clip-text text-[Inter] text-2xl">HERO.IO</a>
+   <a className=" bg-gradient-to-r from-[#632ee3] to-[#9f62f2] font-bold text-transparent bg-clip-text font-[Inter] text-2xl">HERO.IO</a>
 
     </div>
   </div>
