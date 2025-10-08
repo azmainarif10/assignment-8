@@ -3,13 +3,23 @@ import React from 'react';
 import { useLocation } from 'react-router';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
  import {  toast } from 'react-toastify';
+import { useState } from 'react';
+import { useEffect } from 'react';
 const AppDetails = () => {
     const location = useLocation()
-   
-       const {companyName,image,title,size,ratings,description} =location.state
+       const [installed,setInstalled] = useState(false)
+
+       const {companyName,image,title,size,ratings,description,id} =location.state
        
+        useEffect(()=>{
+          const existing = JSON.parse(localStorage.getItem("saved")) || []
+        
+           const alreadyInstalled = existing.some(exits=>exits.id === id)
+              setInstalled(alreadyInstalled)
+
+        },[id])
     function handleInstall(){
-       toast("App installed")
+         if(installed) return toast("App is already installed")
        const existing = JSON.parse(localStorage.getItem("saved")) || []
         let updated = []
        if(existing){
@@ -20,9 +30,12 @@ const AppDetails = () => {
        }
           localStorage.setItem('saved',JSON.stringify(updated))
              
+        setInstalled(true)
+       toast("App installed")
+         
       }
 
-    return (
+     return (
         <div>
             <div className="card lg:card-side bg-base-100 mx-auto shadow-sm">
   <figure className='lg:h-80 lg:w-80'>
@@ -60,7 +73,7 @@ const AppDetails = () => {
  
 
      <div className="card-actions mt-5 ">
-      <button  onClick={handleInstall} className="btn bg-[#00D390] text-white ">Install Now ({size}MB)</button>
+      <button  onClick={handleInstall} className={'btn bg-[#00D390]   text-white'}> {installed ? "Installed" :`Install Now (${size}MB)`}</button>
     </div>
   </div>
  

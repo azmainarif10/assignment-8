@@ -8,6 +8,7 @@ import Apps from './Pages/Apps';
 import Installation from './Pages/Installation';
 import Home from './Pages/Home';
 import AppDetails from './Pages/AppDetails';
+import Error from './Pages/Error';
 
  const router = createBrowserRouter([
       
@@ -37,9 +38,13 @@ import AppDetails from './Pages/AppDetails';
  
       }
     ]
-  }
+  },
 
+   {
+    path:"*",
+    Component:Error,
 
+   }
 
 
  ])
