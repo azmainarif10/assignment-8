@@ -1,25 +1,42 @@
 import React from 'react';
-import { useLocation } from 'react-router';
 
+import { useLocation } from 'react-router';
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+ import {  toast } from 'react-toastify';
 const AppDetails = () => {
     const location = useLocation()
    
-       const {companyName,image,title,size} =location.state
-     
+       const {companyName,image,title,size,ratings,description} =location.state
+       
+    function handleInstall(){
+       toast("App installed")
+       const existing = JSON.parse(localStorage.getItem("saved")) || []
+        let updated = []
+       if(existing){
+        updated = [...existing,location.state]
+      }
+       else{
+          updated.push(location.state)
+       }
+          localStorage.setItem('saved',JSON.stringify(updated))
+             
+      }
+
     return (
         <div>
-            <div className="card card-side bg-base-100 mx-auto shadow-sm">
-  <figure className='h-96 w-96'>
+            <div className="card lg:card-side bg-base-100 mx-auto shadow-sm">
+  <figure className='lg:h-80 lg:w-80'>
     <img
       src={image}
       alt="Movie"
-      className='h-80 w-80 rounded-2xl' />
+      className='lg:h-72 lg:w-72 rounded-2xl' />
       
   </figure>
   <div className="card-body">
     <h2 className="card-title font-[Inter] font-bold text-3xl">{title}</h2>
     <p>Developed by <span className='bg-gradient-to-r from-[#632ee3] to-[#9f62f2]  text-transparent bg-clip-text font-[Inter]'>{companyName}</span></p>
-<div className='flex gap-4 mt-7'>
+<hr className='text-gray-400 mb-3'></hr>
+<div className='flex gap-4 '>
  <div >
     <img src='/icon-downloads.png' />
     <p className='font-[Inter] text-[16px] font-normal text-[#001931]'>Downloads</p>
@@ -43,11 +60,45 @@ const AppDetails = () => {
  
 
      <div className="card-actions mt-5 ">
-      <button className="btn bg-[#00D390] text-white ">Install Now ({size}MB)</button>
+      <button  onClick={handleInstall} className="btn bg-[#00D390] text-white ">Install Now ({size}MB)</button>
     </div>
   </div>
  
 </div>
+
+
+
+
+  <div className='h-80 mb-5'>
+          
+          <p className=' ml-5 mt-5 font-[Inter] text-2xl font-semibold text-[#001931]'>Ratings</p>
+ <ResponsiveContainer width="100%" height="100%">
+      <BarChart
+       
+        data={ratings}
+        layout='vertical'
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis   type='number' />
+        <YAxis dataKey="name"  type='category'reversed='true' />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="count" fill="#FF8811" activeBar={<Rectangle fill="pink" stroke="FF8811" />} />
+       
+      </BarChart>
+    </ResponsiveContainer>
+
+
+
+  </div>
+
+
+     <div>
+      <p className=' ml-5 mt-5 font-[Inter] text-2xl font-semibold text-[#001931]'>Description</p>
+      <p className='ml-5  font-[Inter] text-lg font-normal text-[#001931] '>{description}</p>
+     </div>
+
+
         </div>
     );
 };
