@@ -7,10 +7,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Siren } from 'lucide-react';
 const AppDetails = () => {
-    const location = useLocation()
-  
+       const location = useLocation()
 
-    
        const [installed,setInstalled] = useState(false)
         
        if(!location.state){
@@ -37,7 +35,7 @@ const AppDetails = () => {
         
            const alreadyInstalled = existing.some(exits=>exits.id === id)
               setInstalled(alreadyInstalled)
-
+          window.scrollTo(0, 0);
         },[id])
 
      

@@ -9,6 +9,7 @@ import Installation from './Pages/Installation';
 import Home from './Pages/Home';
 import AppDetails from './Pages/AppDetails';
 import Error from './Pages/Error';
+import NotFound from './Pages/NotFound';
 
  const router = createBrowserRouter([
       
@@ -36,7 +37,8 @@ import Error from './Pages/Error';
         path:"/details/:id",
         Component: AppDetails,
  
-      }
+      },
+     
     ]
   },
 

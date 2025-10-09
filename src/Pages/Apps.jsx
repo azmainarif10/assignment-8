@@ -2,17 +2,17 @@ import React from 'react';
 import useApps from '../Hooks/useApps';
 import AppCard from './AppCard';
 import { useState } from 'react';
-import { Link, useParams } from 'react-router';
+
 import Loader from './Loader';
 import { useEffect } from 'react';
+import { Link } from 'react-router';
 
 
 
 
 const Apps = () => {
 
-  const {id} = useParams()
-  console.log(id)
+ 
     const {data,loading} = useApps();
     const[search,setSearch] = useState('')
     const[matched,setMatched] =useState([])
