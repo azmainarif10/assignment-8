@@ -29,7 +29,7 @@ const AppDetails = () => {
       }
      
 
-       const {companyName,image,title,size,ratings,description,id} = location.state;
+       const {companyName,image,title,size,ratings,description,id,downloads,ratingAvg} = location.state;
        
           useEffect(()=>{
            
@@ -82,13 +82,13 @@ const AppDetails = () => {
  <div >
     <img src='/icon-downloads.png' />
     <p className='font-[Inter] text-[16px] font-normal text-[#001931]'>Downloads</p>
-    <p className='font-[Inter] text-4xl font-extrabold text-[#001931]'>8M</p>
+    <p className='font-[Inter] text-4xl font-extrabold text-[#001931]'>{downloads}</p>
   </div>
 
    <div>
     <img src='/icon-ratings.png' />
     <p className='font-[Inter] text-[16px] font-normal text-[#001931]'>Ratings</p>
-    <p className='font-[Inter] text-4xl font-extrabold text-[#001931]'>4.9</p>
+    <p className='font-[Inter] text-4xl font-extrabold text-[#001931]'>{ratingAvg}</p>
   </div>
 
    <div>

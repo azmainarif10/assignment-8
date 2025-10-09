@@ -19,7 +19,7 @@ const Installation = () => {
     return b.size- a.size;
   
   }if(sort === "Low to High"){
-    return a.size- b.size;
+    return a.downloads- b.downloads;
   
   }
    return 0 ;
@@ -54,7 +54,7 @@ const Installation = () => {
     <div className='flex mt-4 justify-between'>
         <p className=' lg:ml-16 ml-4 font-[Inter] text-[#001931] font-semibold text-2xl '>({selected.length}) Apps Found</p>
          <details className="dropdown mr-5 lg:mr-15">
-  <summary className="btn m-1">Sort By Size</summary>
+  <summary className="btn m-1">Sort By Downloads</summary>
   <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
     <li><a onClick={()=>{setSort("High to Low")}}>High to Low</a></li>
     <li><a onClick={()=>{setSort("Low to High")}}>Low to High</a></li>
@@ -81,7 +81,7 @@ const Installation = () => {
                        <div className='flex items-center'>
     <img className='h-3 w-3' src='/icon-ratings.png' />
    
-    <p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>4.9</p>
+    <p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.ratingAvg}</p>
   </div>
                       
                       <div><p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.size}</p></div>  

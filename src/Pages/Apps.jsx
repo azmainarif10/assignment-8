@@ -25,7 +25,7 @@ const Apps = () => {
      
       setMatched(matchedSearch)
       setIsLoading(false)
-      },500);
+      },200);
    return () => clearTimeout(timeOut);
 
      },[search,data,loading])
