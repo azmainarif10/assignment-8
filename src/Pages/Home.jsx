@@ -5,16 +5,35 @@ import useApps from '../Hooks/useApps';
 import AppCard from './AppCard';
 import { Link } from 'react-router';
 import Loader from './Loader';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Home = () => {
-    const {data,loading,error} = useApps()
+    const {data,loading} = useApps()
+    const [loader,setLoader] =useState(true)
+    
+   useEffect(()=>{
+  
+
+     
+      const timeOut = setTimeout(() => {
+       
+      setLoader(false)
+      },200);
+   return () => clearTimeout(timeOut);
+
+     },[])
+    
    
-    const trendingApps = data.slice(0,8)
+
+const trendingApps = data.slice(0,8)
 
 
-   if(loading){
+
+
+   if( loader || loading){
     return(
-      <div >
+      <div  className='flex justify-center items-center h-screen'  >
          <Loader />
 
       </div>

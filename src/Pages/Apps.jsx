@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Loader from './Loader';
 import { useEffect } from 'react';
 import { Link } from 'react-router';
+import NotFound from './NotFound';
 
 
 
@@ -93,17 +94,14 @@ const Apps = () => {
       <div className='col-span-full flex justify-center items-center' >
          <Loader />
 
-      </div>
+       </div>
 
      )  
          :   matched.length >0 ? (
         matched.map(app=><AppCard key={app.id} app={app} />) ) : (
-            <div>
-                   <p className=' col-span-full font-[Inter] font-semibold text-gray-500 text-5xl text-center'>No apps found</p>
-                                <Link to={'/apps'} >  <button onClick={handleReset} className='  mt-5 btn text-white bg-gradient-to-r from-[#632ee3] to-[#9f62f2]'>Go to All Apps</button></Link>
-
-            </div>
-         
+          <div className='col-span-full flex justify-center items-center' >
+           <NotFound  onClick={handleReset} />
+         </div>
         )}
          
         

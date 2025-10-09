@@ -10,6 +10,21 @@ const Installation = () => {
    const {loading} = useApps()
     const [selected,setSelected] = useState([])
     const [sort,setSort] = useState("")
+    const [loader,setLoader] =useState(true)
+        
+       useEffect(()=>{
+      
+    
+         
+          const timeOut = setTimeout(() => {
+           
+          setLoader(false)
+          },200);
+       return () => clearTimeout(timeOut);
+    
+         },[])
+        
+       
     useEffect(()=>{
       const saved =  JSON.parse(localStorage.getItem("saved")) || []
             setSelected(saved)
@@ -34,9 +49,9 @@ const Installation = () => {
  } 
 
 
-  if(loading){
+  if(loading || loader){
     return(
-      <div >
+      <div className='flex justify-center items-center h-screen' >
          <Loader />
 
       </div>

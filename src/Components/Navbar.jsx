@@ -35,7 +35,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end lg:mr-20">
-    <Link to={'https://github.com/azmainarif10'} target="_blank" className=" font-[Inter] font-semibold text-lg  btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white "> <Github /> Continue</Link>
+    <Link to={'https://github.com/azmainarif10'} target="_blank" className=" font-[Inter] font-semibold text-lg  btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white "> <Github /> Contribute</Link>
   </div>
 </div>
         </div>
