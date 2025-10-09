@@ -4,11 +4,23 @@ import States from '../Components/States';
 import useApps from '../Hooks/useApps';
 import AppCard from './AppCard';
 import { Link } from 'react-router';
+import Loader from './Loader';
 
 const Home = () => {
     const {data,loading,error} = useApps()
    
     const trendingApps = data.slice(0,8)
+
+
+   if(loading){
+    return(
+      <div >
+         <Loader />
+
+      </div>
+
+    )
+  }
 
     return (
         <div>

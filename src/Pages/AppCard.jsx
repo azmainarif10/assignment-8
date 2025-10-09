@@ -14,7 +14,7 @@ const AppCard = ({app}) => {
       className="rounded-xl w-full h-60" />
   </figure>
   <div>
-    <h2 className="card-title ml-3 font-[Inter] mb-2">{app.title}</h2>
+    <h2 className="card-title ml-3 font-[Inter] mb-2">{app.title }</h2>
   </div>
     <div className='flex justify-between '>
         <p className='flex text-[#00D390] ml-3'><Download />{app.downloads}</p>

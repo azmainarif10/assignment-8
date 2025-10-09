@@ -2,9 +2,12 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
  import {  toast } from 'react-toastify';
+import useApps from '../Hooks/useApps';
+import Loader from './Loader';
 
 const Installation = () => {
    
+   const {loading} = useApps()
     const [selected,setSelected] = useState([])
     const [sort,setSort] = useState("")
     useEffect(()=>{
@@ -29,6 +32,18 @@ const Installation = () => {
               localStorage.setItem('saved',JSON.stringify(filtered))
  
  } 
+
+
+  if(loading){
+    return(
+      <div >
+         <Loader />
+
+      </div>
+
+    )
+  }
+
      
     return (
         <div>

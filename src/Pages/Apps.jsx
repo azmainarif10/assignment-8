@@ -3,20 +3,58 @@ import useApps from '../Hooks/useApps';
 import AppCard from './AppCard';
 import { useState } from 'react';
 import { Link } from 'react-router';
+import Loader from './Loader';
+import { useEffect } from 'react';
+
 
 const Apps = () => {
 
-    const {data} = useApps();
-    
+    const {data,loading} = useApps();
     const[search,setSearch] = useState('')
-    
-    const term = search.trim().toLowerCase()
-
-    const matchedSearch = term ? data.filter(da=>da.companyName.toLowerCase().includes(term)) : data
+    const[matched,setMatched] =useState([])
+    const[isLoading,setIsLoading] =useState(false)
+     useEffect(()=>{
+  
+      if(loading) return;
      
+      setIsLoading(true)
+      const timeOut = setTimeout(() => {
+          const term = search.trim().toLowerCase()
+
+     const matchedSearch = term ? data.filter(da=>da.companyName.toLowerCase().includes(term)) : data
+     
+      setMatched(matchedSearch)
+      setIsLoading(false)
+      },500);
+   return () => clearTimeout(timeOut);
+
+     },[search,data,loading])
+    
+   
    function handleReset(){
     setSearch('')
    }
+
+
+
+  if(loading){
+    return(
+      <div >
+         <Loader />
+
+      </div>
+
+    )
+  }
+   if(isLoading){
+    return(
+      <div >
+         <Loader />
+
+      </div>
+
+    )
+  }
 
     return (
         <div>
@@ -41,15 +79,23 @@ const Apps = () => {
       <path d="m21 21-4.3-4.3"></path>
     </g>
   </svg>
-  <input onChange={(e)=>{setSearch(e.target.value)}} type="search" required placeholder="Search Apps" />
+  <input value={search} onChange={(e)=>{setSearch(e.target.value)}} type="search" required placeholder="Search Apps" />
 </label>
         </div>
     </div>
 
+
+
+
      <div className=' mt-6 lg:w-11/12 mx-auto gap-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
 
-        { matchedSearch.length >0 ? (
-        matchedSearch.map(app=><AppCard key={app.id} app={app} />) ) : (
+ 
+
+
+      {  
+          
+            matched.length >0 ? (
+        matched.map(app=><AppCard key={app.id} app={app} />) ) : (
             <div>
                    <p className=' font-[Inter] font-semibold text-gray-500 text-5xl text-center'>No apps found</p>
                                 <Link to={'/apps'} >  <button onClick={handleReset} className='  mt-5 btn text-white bg-gradient-to-r from-[#632ee3] to-[#9f62f2]'>Go to All Apps</button></Link>
@@ -57,7 +103,9 @@ const Apps = () => {
             </div>
          
         )
-        }
+         
+        
+      }
         </div>
         </div>
     );
