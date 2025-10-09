@@ -2,26 +2,32 @@ import React from 'react';
 import useApps from '../Hooks/useApps';
 import AppCard from './AppCard';
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useParams } from 'react-router';
 import Loader from './Loader';
 import { useEffect } from 'react';
 
 
+
+
 const Apps = () => {
 
+  const {id} = useParams()
+  console.log(id)
     const {data,loading} = useApps();
     const[search,setSearch] = useState('')
     const[matched,setMatched] =useState([])
     const[isLoading,setIsLoading] =useState(false)
+   
      useEffect(()=>{
   
       if(loading) return;
      
+
       setIsLoading(true)
       const timeOut = setTimeout(() => {
           const term = search.trim().toLowerCase()
 
-     const matchedSearch = term ? data.filter(da=>da.companyName.toLowerCase().includes(term)) : data
+     const matchedSearch = term ? data.filter(da=>da.title.toLowerCase().includes(term)) : data
      
       setMatched(matchedSearch)
       setIsLoading(false)
@@ -37,7 +43,7 @@ const Apps = () => {
 
 
 
-  if(loading){
+  if(loading ){
     return(
       <div >
          <Loader />
@@ -46,15 +52,9 @@ const Apps = () => {
 
     )
   }
-   if(isLoading){
-    return(
-      <div >
-         <Loader />
+  
 
-      </div>
 
-    )
-  }
 
     return (
         <div>
@@ -65,7 +65,7 @@ const Apps = () => {
    
     <div className='flex mt-4 justify-between'>
         <p className=' lg:ml-16 ml-4 font-[Inter] text-[#001931] font-semibold text-2xl '>({data.length}) Apps Found</p>
-        <div className='lg:mr-16 mr-4'>
+        <div className='lg:mr-16 mr-4' key="search-wrapper">
            <label className="input">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
@@ -89,23 +89,25 @@ const Apps = () => {
 
      <div className=' mt-6 lg:w-11/12 mx-auto gap-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
 
- 
+     { isLoading ? (
+      <div className='col-span-full flex justify-center items-center' >
+         <Loader />
 
+      </div>
 
-      {  
-          
-            matched.length >0 ? (
+     )  
+         :   matched.length >0 ? (
         matched.map(app=><AppCard key={app.id} app={app} />) ) : (
             <div>
-                   <p className=' font-[Inter] font-semibold text-gray-500 text-5xl text-center'>No apps found</p>
+                   <p className=' col-span-full font-[Inter] font-semibold text-gray-500 text-5xl text-center'>No apps found</p>
                                 <Link to={'/apps'} >  <button onClick={handleReset} className='  mt-5 btn text-white bg-gradient-to-r from-[#632ee3] to-[#9f62f2]'>Go to All Apps</button></Link>
 
             </div>
          
-        )
+        )}
          
         
-      }
+      
         </div>
         </div>
     );
