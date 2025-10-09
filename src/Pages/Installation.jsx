@@ -16,7 +16,7 @@ const Installation = () => {
 },[])
      const sorted = [...selected].sort((a,b)=>{
   if(sort === "High to Low"){
-    return b.size- a.size;
+    return b.downloads- a.downloads;
   
   }if(sort === "Low to High"){
     return a.downloads- b.downloads;
@@ -76,7 +76,7 @@ const Installation = () => {
                        <div className='flex items-center' >
     <img className='h-3 w-3' src='/icon-downloads.png' />
    
-    <p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.downloads}</p>
+    <p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.downloads}M</p>
   </div>
                        <div className='flex items-center'>
     <img className='h-3 w-3' src='/icon-ratings.png' />
@@ -84,7 +84,7 @@ const Installation = () => {
     <p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.ratingAvg}</p>
   </div>
                       
-                      <div><p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.size}</p></div>  
+                      <div><p className='font-[Inter] text-[16px] font-extrabold text-[#001931]'>{select.size} MB</p></div>  
                     </div>
                 </div>
             </div>

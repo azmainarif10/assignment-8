@@ -17,7 +17,7 @@ const AppCard = ({app}) => {
     <h2 className="card-title ml-3 font-[Inter] mb-2">{app.title }</h2>
   </div>
     <div className='flex justify-between '>
-        <p className='flex text-[#00D390] ml-3'><Download />{app.downloads}</p>
+        <p className='flex text-[#00D390] ml-3'><Download />{app.downloads}M</p>
         <p className='flex text-[#FF8811] mr-3' ><Star />{app.ratingAvg}</p>
     </div>
 </div>

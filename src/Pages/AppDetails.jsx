@@ -82,7 +82,7 @@ const AppDetails = () => {
  <div >
     <img src='/icon-downloads.png' />
     <p className='font-[Inter] text-[16px] font-normal text-[#001931]'>Downloads</p>
-    <p className='font-[Inter] text-4xl font-extrabold text-[#001931]'>{downloads}</p>
+    <p className='font-[Inter] text-4xl font-extrabold text-[#001931]'>{downloads}M</p>
   </div>
 
    <div>
